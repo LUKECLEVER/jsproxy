@@ -12,22 +12,69 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
-    'demo-hk': {
-      label: '演示服务-香港节点',
+    'gua0': {
+      label: '中国-瓜瓜专属高速节点',
       lines: {
-        // 主机:权重
-        'node-aliyun-hk-1.etherdream.com:8443': 1,
-        'node-aliyun-hk-2.etherdream.com:8443': 2,
+        [location.host]: 1,
       }
     },
-    'demo-sg': {
-      label: '演示服务-新加坡节点',
+    'gua1': {
+      label: '中国-香港节点',
       lines: {
-        'node-aliyun-sg.etherdream.com:8443': 1,
-      },
+        [location.host]: 1,
+      }
     },
-    'mysite': {
-      label: '当前站点',
+    'gua2': {
+      label: '中国-上海节点',
+      lines: {
+        [location.host]: 1,
+      }
+    },
+    'gua3': {
+      label: '中国-贵州节点',
+      lines: {
+        [location.host]: 1,
+      }
+    },
+    
+    'gua4': {
+      label: '美国节点',
+      lines: {
+        [location.host]: 1,
+      }
+    },
+    'gua5': {
+      label: '新加坡节点',
+      lines: {
+        [location.host]: 1,
+      }
+    },
+    'gua6': {
+      label: '日本节点',
+      lines: {
+        [location.host]: 1,
+      }
+    },
+    'gua7': {
+      label: '荷兰节点',
+      lines: {
+        [location.host]: 1,
+      }
+    },
+    'gua8': {
+      label: '英国节点',
+      lines: {
+        [location.host]: 1,
+      }
+    },
+    'gua9': {
+      label: '德国节点',
+      lines: {
+        [location.host]: 1,
+      }
+    },
+    'gua10': {
+      label: '法国节点',
       lines: {
         [location.host]: 1,
       }
@@ -79,8 +126,8 @@ jsproxy_config({
   /**
    * 自定义注入页面的 HTML
    */
-  inject_html: '<!-- custom html -->',
-
+  inject_html: '<link rel="shortcut icon" href="https://source.luyaoguagua.top/ico/favicon.ico">',
+  
   /**
    * URL 自定义处理（设计中）
    */
